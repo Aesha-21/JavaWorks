@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: EMPLOYEE-SERVICE
+  
+  datasource: 
+    url: jdbc:postgresql://localhost:5432/leaveManagement
+    username: postgres
+    password: postgres
+
+  jpa:
+    show-sql: true
+    hibernate: 
+      ddl-auto: update
+
+server:
+  port: 9010
+
+eureka:
+  client:
+    server-url: 
+      default-zone: http://localhost:8761/eureka
