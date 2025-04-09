@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Quize-Service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/quizedb
+    username: postgres
+    password: postgres
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 9040
+ 
+eureka:
+  client:
+    server-url:
+      default-zone: http://localhost:8761/eureka
